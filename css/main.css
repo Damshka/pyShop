@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    text-transform: uppercase;
+}
+
+#loginForm{
+    width: 500px;
+    height: 500px;
+    margin: 20px 50px;
+}
+
+#loginForm input, .newNote input, .newNote textarea{
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 15px;
+    width: 80%;
+    margin: 10px 10%;
+
+}
+
+#loginForm input[type="submit"], button, .newNote input[type="submit"]{
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    color: #515A5F;
+    margin-left: 13%;
+    cursor: pointer;
+}
+
+button{
+    border: 0;
+    padding: 15px 35px;
+    margin-left: 25%;
+    float: left;
+}
+
+.latest {
+ margin-left: 10px;
+}
+
+#loginForm input[type="submit"]:hover, #loginForm input:focus, button:hover, .newNote input[type="submit"]:hover,.newNote input:focus {
+    color: #7992EE;
+    transition: 0.5s linear;
+}
+
+main {
+    width: 80%;
+    min-height: 500px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1{
+    color: #7992EE;
+    font-size: 28px;
+    text-align: left;
+    padding-left: 10%;
+    width: 43%;
+    float: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+
+}
+
+.close{
+    position: relative;
+    z-index: 15;
+    top: 22%;
+    left: 54%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    /*border: 4px solid #e117b2;*/
+    /*border-radius: 50%;*/
+}
+
+.close:before,
+.close:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 15px;
+    height: 2px;
+    background: #c3cbe1;
+}
+
+.close:before {
+    webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.close:after {
+    webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+.note{
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #7992EE;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+
+}
+
+.note h2{
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.note p{
+    font-size: 16px;
+    margin: 35px 0;
+    padding: 0 20px;
+}
+
+.note span{
+    font-size: 12px;
+    color: #515A5F;
+
+}
+
+.creationTime{
+    font-weight: bold;
+}
+
+.newNote {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 90, 95, 0.5);
+
+    text-align: center;
+    display: none;
+    z-index: 20;
+}
+
+.newNote form {
+    width: 500px;
+    min-height: 300px;
+    position: relative;
+    top: 20%;
+    left: 25%;
+    padding: 50px 20px;
+    background-color: #7992EE;
+    border-radius: 5px;
+    font-size: 18px;
+
+    color: #ffffff;
+}
