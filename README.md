@@ -1,5 +1,5 @@
 # pyShop
-notes app
+notes app, test taks for traineeship
 
 Запуск:
 1. Импортировать БД pyShop 
